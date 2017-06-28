@@ -1,5 +1,17 @@
 #!/bin/bash
 #
+echo " "
+jeshile='\e[40;38;5;82m' #jeshile
+jo='\e[0m' # pa ngjyra
+os=$(exec uname -m|grep 64)
+if [ "$os" = "" ]
+then os="x86"
+else os="x64"
+fi
+echo -e "${jeshile} ┌───────────────────────────┐ \e[0m"
+echo -e "${jeshile} │  Checking System Version  │ \e[0m"
+echo -e "${jeshile} └───────────────────────────┘ \e[0m"
+sleep 3
 apt-get update && apt-get upgrade -y
 apt-get install lsb-release nscd curl php5 php5-mysql php5-cli php5-curl unzip -y && apt-get install php5-mcrypt &&  php5enmod mcrypt
 service apache2 restart
