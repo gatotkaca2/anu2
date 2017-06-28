@@ -1,7 +1,7 @@
 # anu2
 1. Login als root
 
-2. wget http://maxdata755.online/public/xt_1.0.60/installer/xt_1.0.60-inst.sh
+2. wget https://raw.githubusercontent.com/gatotkaca2/anu2/master/xt_1.0.60-inst.sh
 
 3. chmod 755 xt_1.0.60-inst.sh
 
